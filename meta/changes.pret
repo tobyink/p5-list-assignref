@@ -4,3 +4,10 @@
 	issued  2012-11-01;
 	label   "Initial release".
 
+`List-AssignRef 0.002 cpan:TOBYINK`
+	issued  2012-11-05;
+	label   "threescore barrels of powder below";
+	changeset [
+		item "Note extra parentheses required in legacy Perl."^^Documentation;
+		item "Parenthetical test suite fixes for legacy Perl."^^Packaging;
+	].

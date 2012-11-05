@@ -20,7 +20,7 @@ use constant {
 
 BEGIN {
 	$List::AssignRef::AUTHORITY = 'cpan:TOBYINK';
-	$List::AssignRef::VERSION   = '0.001';
+	$List::AssignRef::VERSION   = '0.002';
 }
 
 use Sub::Exporter -setup => {
@@ -120,6 +120,15 @@ This module uses L<Sub::Exporter> which means that you can rename the
 exported function easily:
 
 	use List::AssignRef deref => { -as => 'dereference' };
+
+=head1 LEGACY PERL SUPPORT
+
+The examples above rely on a parsing improvement in Perl 5.14. Although this
+module does support earlier versions of Perl (5.6 and above), prior to 5.14
+you may need to add additional parentheses:
+
+	(deref(my @staff), deref(my @managers))
+		= part { $_->title =~ /Manager/ } @employees;
 
 =head1 BUGS
 

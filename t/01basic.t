@@ -2,7 +2,7 @@ use Test::More tests => 5;
 use List::AssignRef;
 use List::MoreUtils qw( part );
 
-deref my @input = [qw(
+deref(my @input) = [qw(
 	Ape
 	Bear
 	Bunny
@@ -11,7 +11,7 @@ deref my @input = [qw(
 	Badger
 )];
 
-(deref my @A, deref my @B) = part { !!/^B/ } sort @input;
+(deref(my @A), deref(my @B)) = part { !!/^B/ } sort @input;
 
 is_deeply(
 	\@A,
@@ -23,19 +23,19 @@ is_deeply(
 	[qw( Badger Bear Bison Bunny )],
 );
 
-deref my %H = +{ foo => 1, bar => 2 };
+deref(my %H) = +{ foo => 1, bar => 2 };
 is_deeply(
 	\%H,
 	+{ foo => 1, bar => 2 },
 );
 
 
-deref my $S = \"Hello World";
+deref(my $S) = \"Hello World";
 is(
 	$S,
 	"Hello World",
 );
 
 ok not eval {
-	deref my %H2 = [];
+	deref(my %H2) = [];
 };
