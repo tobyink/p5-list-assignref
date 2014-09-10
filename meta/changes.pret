@@ -11,3 +11,10 @@
 		item "Note extra parentheses required in legacy Perl."^^Documentation;
 		item "Parenthetical test suite fixes for legacy Perl."^^Packaging;
 	].
+
+`List-AssignRef 0.003 cpan:TOBYINK`
+	issued    2014-09-10;
+	changeset [
+		item "Switch to Dist::Inkt."^^Packaging;
+	].
+

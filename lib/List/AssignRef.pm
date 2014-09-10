@@ -20,7 +20,7 @@ use constant {
 
 BEGIN {
 	$List::AssignRef::AUTHORITY = 'cpan:TOBYINK';
-	$List::AssignRef::VERSION   = '0.002';
+	$List::AssignRef::VERSION   = '0.003';
 }
 
 use Sub::Exporter -setup => {
