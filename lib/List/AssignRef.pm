@@ -111,7 +111,7 @@ assigned to it.
 
 =back
 
-This module uses L<Sub::Exporter> which means that you can rename the
+This module uses L<Exporter::Shiny> which means that you can rename the
 exported function easily:
 
 	use List::AssignRef deref => { -as => 'dereference' };
