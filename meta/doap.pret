@@ -8,7 +8,7 @@
 	:homepage             <https://metacpan.org/release/List-AssignRef>;
 	:download-page        <https://metacpan.org/release/List-AssignRef>;
 	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=List-AssignRef>;
-	:respository          [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-list-assignref> ];
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-list-assignref> ];
 	:created              2012-11-01;
 	:license              <http://dev.perl.org/licenses/>;
 	:maintainer           cpan:TOBYINK;
