@@ -23,12 +23,7 @@ BEGIN {
 	$List::AssignRef::VERSION   = '0.004';
 }
 
-use Sub::Exporter -setup => {
-	exports  => [qw( deref )],
-	groups   => {
-		default  => [qw( deref )],
-	},
-};
+use Exporter::Shiny our @EXPORT = qw( deref );
 
 sub _confessf
 {
