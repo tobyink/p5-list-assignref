@@ -18,3 +18,8 @@
 		item "Switch to Dist::Inkt."^^Packaging;
 	].
 
+`List-AssignRef 0.004 cpan:TOBYINK`
+	issued    2014-09-10;
+	changeset [
+		item "Fix repo link."^^Packaging;
+	].
