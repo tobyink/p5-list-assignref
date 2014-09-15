@@ -3,7 +3,7 @@ package List::AssignRef;
 use 5.006;
 use strict;
 use warnings;
-use lvalue;
+use LV qw( lvalue );
 use Carp qw( confess );
 use Scalar::Util qw( reftype );
 
@@ -39,13 +39,13 @@ sub _confessf
 sub deref (\[$@%]) :lvalue
 {
 	my $given = shift;
-	get {
+	lvalue get => sub {
 		reftype($given) eq SCALAR ? $$given :
 		reftype($given) eq ARRAY  ? @$given :
 		reftype($given) eq HASH   ? %$given :
 		_confessf(ERR_UNSUPPORTED, reftype($given));
-	}
-	set {
+	},
+	set => sub {
 		my $assign = shift;
 		reftype($given) eq reftype($assign)
 			or _confessf(ERR_MISMATCH, reftype($given), reftype($assign));
