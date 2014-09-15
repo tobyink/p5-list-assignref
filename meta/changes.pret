@@ -19,7 +19,10 @@
 	].
 
 `List-AssignRef 0.004 cpan:TOBYINK`
-	issued    2014-09-10;
+	issued    2014-09-15;
 	changeset [
 		item "Fix repo link."^^Packaging;
+		item "Use LV instead of lvalue.pm."^^Change;
+		item "Use Exporter::Shiny instead of Sub::Exporter."^^Change;
 	].
+
