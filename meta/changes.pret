@@ -26,3 +26,10 @@
 		item "Use Exporter::Shiny instead of Sub::Exporter."^^Change;
 	].
 
+`List-AssignRef 0.005 cpan:TOBYINK`
+	issued    2020-11-15;
+	label     "seventy-four months later...";
+	changeset [
+		item "Add missing parent.pm dependency."^^Packaging;
+	].
+
