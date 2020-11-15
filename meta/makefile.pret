@@ -4,6 +4,7 @@
 	deps:runtime-requirement         [ deps:on "perl 5.006"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "LV"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "Exporter::Shiny"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "parent"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "Test::More 0.61"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "List::MoreUtils"^^deps:CpanId ].
 
